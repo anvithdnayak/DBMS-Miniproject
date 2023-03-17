@@ -1,0 +1,152 @@
+@import url('https://fonts.google.com/specimen/Poppins');
+
+*
+{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Poppins-BoldItalic;
+
+}
+body
+{
+    display: contents;
+    justify-content: end;
+    align-items: end;
+    min-height: 100vh;
+    background: rgb(0, 0, 0);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-wrap: wrap;
+}
+
+.container a
+{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid rgb(255, 80, 226);
+    margin: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+    -webkit-box-reflect: below 0px linear-gradient
+    (transparent, #000);
+    transition: 0.2s;
+    transition-delay: 0s;
+}
+
+.container a:hover
+{
+    transition-delay: 0.3s;
+    color: #000;
+    box-shadow: 0 0 10px rgb(255, 80, 226),
+    0 0 20px rgb(255, 80, 226),
+    0 0 40px rgb(255, 80, 226),
+    0 0 80px rgb(255, 80, 226),
+    0 0 160px rgb(255, 80, 226);
+}
+
+.container a span
+{
+    position: relative;
+    z-index: 100;
+}
+
+.container a:nth-child(2)
+{
+    filter: hue-rotate(170deg);
+}
+
+.container a:nth-child(4)
+{
+    filter: hue-rotate(170deg);
+}
+
+.container a:nth-child(6)
+{
+    filter: hue-rotate(170deg);
+}
+
+.container a::before
+{
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: rgb(255, 80, 226);
+    box-shadow: 5px -8px 0 rgb(255, 80, 226),
+                5px 8px 0 rgb(255, 80, 226);
+    transition: width 0.3s, left 0.3s, height 0.3s,
+    box-shodow 0.3s;
+    transition-delay: 0.5s, 0.5s, 0s, 0s;
+}
+
+.container a:hover::before
+{
+    width: 60%;
+    height: 100%;
+    left: -2px;
+    box-shadow: 5px 0 0 rgb(255, 80, 226),
+                5px 0 0 rgb(255, 80, 226);
+    transition-delay: 0s, 0.3s, 0.3s, 0.5s;
+}
+
+.container a::after
+{
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: rgb(255, 80, 226);
+    box-shadow: -5px -8px 0 rgb(255, 80, 226),
+                -5px 8px 0 rgb(255, 80, 226);
+    transition: width 0.3s, left 0.3s, height 0.3s, box-shodow 0.3s;
+    transition-delay: 0.5s, 0.3s, 0s, 0s;
+}
+
+.container a:hover::after
+{
+    width: 60%;
+    height: 100%;
+    right: -2px;
+    box-shadow: -5px 0 0 rgb(255, 80, 226),
+                -5px 0 0 rgb(255, 80, 226);
+    transition-delay: 0s, 0.3s, 0.3s, 0.5s;
+}
+
+.topnav {
+    background-color: #76b3d1;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: rgb(136, 143, 244);
+}
+
+.topnav a.active {
+    background-color: #001061;
+    color: white;
+}

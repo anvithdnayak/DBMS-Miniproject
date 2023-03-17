@@ -1,0 +1,7 @@
+Total Fare Info. 
+- find if the station is in "G_STATIONS" or "P_STATIONS"
+- find it's distance from "MAJESTIC"
+- next check if *THE DESTINATION" is in "G_STATIONS" or "P_STATIONS"
+- find the distance of destination station's from "MAJESTIC"
+- add both the distances
+- use "FARE_STORED" and "FARE_TOKEN" to find the total fare for the added value of stations
